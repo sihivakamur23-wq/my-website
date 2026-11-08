@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d1109">
+<title>Page Not Found | Excel Defence Academy</title>
+<meta name="description" content="The page you are looking for could not be found. Return to Excel Defence Academy's home page to explore our courses, facilities and admissions.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  .nf{min-height:100svh;display:grid;place-items:center;padding:48px 20px;position:relative;overflow:hidden}
+  .nf::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(1200px 600px at 50% -10%,rgba(201,162,39,.16),transparent 60%),
+    radial-gradient(900px 500px at 85% 110%,rgba(31,158,51,.12),transparent 60%);pointer-events:none}
+  .nf__card{position:relative;max-width:640px;width:100%;text-align:center;
+    background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+    border:1px solid var(--glass-brd);border-top:3px solid var(--gold);
+    border-radius:var(--radius-lg);padding:48px 34px 42px;backdrop-filter:blur(10px);
+    box-shadow:0 30px 70px rgba(0,0,0,.5)}
+  .nf__mark{width:78px;height:84px;margin:0 auto 18px;display:block;filter:drop-shadow(0 8px 22px rgba(201,162,39,.3))}
+  .nf__code{font-family:var(--font-display);font-weight:700;font-size:clamp(4rem,16vw,7rem);line-height:.9;
+    background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em}
+  .nf__title{font-family:var(--font-display);font-weight:600;font-size:clamp(1.3rem,4vw,1.9rem);
+    text-transform:uppercase;letter-spacing:.06em;color:var(--white);margin:14px 0 10px}
+  .nf__txt{color:var(--muted);font-size:1rem;line-height:1.7;max-width:44ch;margin:0 auto 26px}
+  .nf__btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .nf__motto{margin-top:28px;font-family:var(--font-accent);font-size:.72rem;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--army-300)}
+  .nf__rule{height:3px;width:120px;margin:0 auto 24px;border-radius:2px;
+    background:linear-gradient(90deg,var(--saffron) 0 33.33%,#fff 33.33% 66.66%,var(--india-green) 66.66% 100%)}
+</style>
+</head>
+<body>
+
+<main class="nf" id="main">
+  <div class="nf__card">
+    <img class="nf__mark" src="/assets/logo.svg" alt="Excel Defence Academy emblem" width="78" height="84">
+    <p class="nf__code">404</p>
+    <div class="nf__rule" aria-hidden="true"></div>
+    <h1 class="nf__title">This Page Has Fallen Out of Formation</h1>
+    <p class="nf__txt">
+      The page you were looking for could not be found. It may have been moved, renamed,
+      or never existed. Fall back in and continue from the home page.
+    </p>
+    <div class="nf__btns">
+      <a href="/" class="btn btn--gold"><svg aria-hidden="true"><use href="#i-arrow"/></svg> Back to Home</a>
+      <a href="/#courses" class="btn btn--outline">Explore Courses</a>
+      <a href="/#contact" class="btn btn--outline">Contact Us</a>
+    </div>
+    <p class="nf__motto">Discipline &bull; Dedication &bull; Patriotism</p>
+  </div>
+</main>
+
+<!-- Icon sprite: the 404 page uses the same symbols as the main site -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+# ============================================================
+#  Cloudflare Pages — redirects & rewrites
+#  Docs: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+#  Note: Cloudflare Pages already serves /index.html for the bare root "/",
+#  so no root rewrite rule is required (and omitting it avoids any loop).
+# ============================================================
+
+# Canonicalise /index.html to the clean root URL
+/index.html  /  301
+
+# Short, memorable links used in printed posters / WhatsApp messages
+/apply     /#admission   301
+/courses   /#courses     301
+/contact   /#contact     301
+/gallery   /#gallery     301
+/admission /#admission   301
+
+# Unmatched routes are handled automatically by Cloudflare Pages,
+# which serves /404.html with a real 404 status. No catch-all needed here.

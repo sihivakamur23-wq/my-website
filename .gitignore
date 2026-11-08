@@ -1,0 +1,36 @@
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# ---- logs & temp ----
+*.log
+npm-debug.log*
+.tmp/
+tmp/
+_qa*.html
+
+# ---- local archives (generated for download) ----
+*.zip
+*.bundle
+*.tar.gz
+
+# ---- dependency folders (unused here, but future-proof) ----
+node_modules/
+.pnpm-store/
+vendor/
+
+# ---- build output (this project has no build step; listed for safety) ----
+dist/
+build/
+.cache/
+
+# ---- env / secrets ----
+.env
+.env.*
+!.env.example
