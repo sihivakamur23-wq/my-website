@@ -2,6 +2,10 @@ name: Extract Website ZIP
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'excel-defence-academy-source.zip'
+      - '.github/workflows/extract-zip.yml'
 
 permissions:
   contents: write
