@@ -1,0 +1,40 @@
+name: Extract Website ZIP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract website
+        run: |
+          mkdir -p temp
+          unzip -o excel-defence-academy-source.zip -d temp
+
+          INDEX=$(find temp -name index.html -type f | head -n 1)
+
+          if [ -z "$INDEX" ]; then
+            echo "index.html not found in ZIP"
+            exit 1
+          fi
+
+          ROOT=$(dirname "$INDEX")
+          cp -a "$ROOT"/. .
+
+          rm -rf temp
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Extract Excel Defence Academy website" || echo "No changes"
+          git push
